@@ -10,13 +10,13 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+#header .menu li {margin-left: 30px;}
 }
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {	
-
+.menu {display: none;}
 }
 
 
