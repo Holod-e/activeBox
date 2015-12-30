@@ -19,6 +19,7 @@
 		width: 100%;
 		margin-bottom: 150px;
 		padding: 38px 0;}
+		border-bottom: 2px solid white;
 }
 .menu {
 	margin: 0;
@@ -36,7 +37,11 @@
 		font-weight: 700;
 		opacity: 0.75;
 		text-transform: uppercase;
+		transition: all 0.3s linear;
 		}
+	a:hover {
+		color: $main-color;
+	}
 }
 .header-content {
 	text-align: center;

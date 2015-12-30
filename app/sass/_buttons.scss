@@ -10,5 +10,11 @@
 	color: white;
 	border-radius: 2px;
 	background-color: $main-color;
-	border: none;
+	border: 1px solid $main-color;
+	transition: all 0.3s linear;
+}
+
+.btn:hover{
+	background-color: transparent;
+	color: $main-color;
 }
