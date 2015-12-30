@@ -43,6 +43,14 @@ $(document).ready(function() {
 		return true;
 	}));
 
+	//плавный переход по якорю
+	$("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
 	//jquery.matchHeight.js
 	//Docs: https://github.com/liabru/jquery-match-height
 	$('element').matchHeight();

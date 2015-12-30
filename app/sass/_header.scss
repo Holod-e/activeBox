@@ -40,7 +40,7 @@
 		text-transform: uppercase;
 		transition: all 0.3s linear;
 		}
-	a:hover {
+	a:hover, a:active, a:focus {
 		color: $main-color;
 	}
 }
