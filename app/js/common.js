@@ -1,4 +1,9 @@
 $(document).ready(function() {
+//мобильное меню
+	$('.mob-menu').click(function() {
+		$('.mobnav').fadeToggle();
+	});
+
 
 	$('.item').hover(
 		function() {
@@ -36,6 +41,22 @@ $(document).ready(function() {
 	//Check
 	console.log('Done!');
 
+//Chrome Smooth Scroll
+	try {
+		$.browserSelector();
+		if($("html").hasClass("chrome")) {
+			$.smoothScroll();
+		}
+	} catch(err) {
+
+	};
+
+//SVG Fallback
+	if(!Modernizr.svg) {
+		$("img[src*='svg']").attr("src", function() {
+			return $(this).attr("src").replace(".svg", ".png");
+		});
+	};
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");

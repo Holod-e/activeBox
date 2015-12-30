@@ -14,6 +14,9 @@
 	padding-bottom: 100px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	.logo {
+		float: left;
+	}
 	&::before { @extend .overlay ;}
 	.topline {
 		min-height: 100px;
@@ -22,7 +25,7 @@
 		padding: 38px 0;}
 		border-bottom: 2px solid white;
 }
-.menu {
+.navigation {
 	margin: 0;
 	padding: 0;
 	float: right;
@@ -44,6 +47,19 @@
 		color: $main-color;
 	}
 }
+
+.mob-menu {
+	position: absolute;
+	top: -10px;
+	right: 20px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: right;
+	font-size: 30px;
+	color: #fff;
+}
+
 .header-content {
 	text-align: center;
 	.header-desc {
